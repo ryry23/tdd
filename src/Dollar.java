@@ -1,11 +1,15 @@
 package money;
 
 public class Dollar {
-    double amount = 10;
+    double amount;
     Dollar(double amount){
-
+        this.amount = amount;
     }
-    void times(double multiplier){
-
+    Dollar times(double multiplier) {
+       return new Dollar(amount * multiplier);
+    }
+    public boolean equals (Object object) {
+        Dollar dollar = (Dollar) object;
+        return amount == dollar.amount;
     }
 }
