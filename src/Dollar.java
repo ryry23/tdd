@@ -1,11 +1,11 @@
 package money;
 
 public class Dollar {
-    double amount = 10;
+    double amount;
     Dollar(double amount){
-
+        this.amount = amount;
     }
     void times(double multiplier){
-
+       amount = amount * multiplier;
     }
 }
